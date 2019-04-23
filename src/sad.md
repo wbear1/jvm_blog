@@ -52,7 +52,7 @@ netty中ByteBuf的抽象程度很高，设计复杂程序较高，包含如下�
 
 最后作个总结：
 
-**1）线上环境，不要把用于调试或者测试的方法、参数、配置放上去，比如这次的io.netty.leakDetectionLevel=paranoid，否则就是在埋雷；**
+**1）线上环境，不要把用于调试或者测试的方法、参数、配置放上去，比如这次的-Dio.netty.leakDetectionLevel=paranoid，否则就是在埋雷；**
 
 **2）发布sdk依赖时，尽可能精简，无关依赖一律不加，否则就是在坑队友；**
 
